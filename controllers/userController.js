@@ -18,11 +18,10 @@ const transporter = nodemailer.createTransport({
     secure: true,
     service: "gmail",
     auth: {
-        user: "shivamshibu2003@gmail.com",
-        pass: "xxeijsmpaezrggad",
+      user: "shivamshibu2003@gmail.com",
+      pass: "xxeijsmpaezrggad",
     },
-});
-
+  });
 export const message = catchASyncError(async (req, res, err, next) => {
     const { to, email, from, message } = req.body;
 
