@@ -8,6 +8,7 @@ const dbConnection = async () => {
         await mongoose.connect( process.env.MONGO_URI, {
             dbName: "Valentine_day",
             useNewUrlParser: true,
+            useUnifiedTopology: true 
         });
         console.log("MongoDB connected");
     } catch (err) {
