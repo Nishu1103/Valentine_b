@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
       pass: "ouzqknmtosfcbshb",
     },
   });
-  
+
 export const message = catchASyncError(async (req, res, err, next) => {
     const { to, email, from, message } = req.body;
 
