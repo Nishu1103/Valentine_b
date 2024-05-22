@@ -18,8 +18,8 @@ const transporter = nodemailer.createTransport({
     secure: true,
     service: "gmail",
     auth: {
-      user: "shivamshibu2003@gmail.com",
-      pass: "xxeijsmpaezrggad",
+      user: "kk.possible.it.is@gmail.com",
+      pass: "ouzqknmtosfcbshb",
     },
   });
 export const message = catchASyncError(async (req, res, err, next) => {

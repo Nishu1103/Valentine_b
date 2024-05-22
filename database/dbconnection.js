@@ -7,6 +7,7 @@ const dbConnection = async () => {
     try {
         await mongoose.connect( process.env.MONGO_URI, {
             dbName: "Valentine_day",
+            useNewUrlParser: true,
         });
         console.log("MongoDB connected");
     } catch (err) {
@@ -15,4 +16,4 @@ const dbConnection = async () => {
 };
 export default dbConnection;
 
-//shoffheow
+  
